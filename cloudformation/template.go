@@ -31,11 +31,11 @@ type Parameter struct {
 	AllowedPattern        string        `json:"AllowedPattern,omitempty"`
 	AllowedValues         []interface{} `json:"AllowedValues,omitempty"`
 	ConstraintDescription string        `json:"ConstraintDescription,omitempty"`
-	MaxLength             int           `json:"MaxLength,omitempty"`
-	MinLength             int           `json:"MinLength,omitempty"`
-	MaxValue              float64       `json:"MaxValue,omitempty"`
-	MinValue              float64       `json:"MinValue,omitempty"`
-	NoEcho                bool          `json:"NoEcho,omitempty"`
+	MaxLength             interface{}           `json:"MaxLength,omitempty"`
+	MinLength             interface{}           `json:"MinLength,omitempty"`
+	MaxValue              interface{}       `json:"MaxValue,omitempty"`
+	MinValue              interface{}       `json:"MinValue,omitempty"`
+	NoEcho                interface{}          `json:"NoEcho,omitempty"`
 }
 
 type Output struct {
